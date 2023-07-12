@@ -1,0 +1,369 @@
+body{
+    font-family: Montserrat;
+  }
+  #title {
+    background-color: #EDDBC7;
+  }
+  .container-fluid{
+    padding: 3% 15% 7%;
+  }
+  /* Heading */
+  h1 {
+    font-weight: 900;
+  
+    font-family: Montserrat-Black;
+  
+    font-size: 3.5rem;
+  
+  
+    line-height: 1.5;
+    color: white;
+  }
+  h2{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+  
+  }
+  h3{
+    font-family: Merriweather;
+    font-weight: bold;
+  }
+  p{
+    color: #8f8f8f;
+  }
+  
+  /* navigation-bar */
+  .navbar-brand1{
+    font-family: Ubuntu;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #11999E;
+  }
+  
+  .navbar{
+    padding-bottom: 4.5%;
+    
+  }
+  .nav-item{
+    padding: 0 18px;
+    color: #000;
+    
+  }
+  .nav-link1{
+    font-size: 1.2rem;
+    font-family: Montserrat-Light;
+    color: #000;
+  }
+  
+  
+  /* download-button */
+  .download-button{
+    margin: 5% 3% 5% 0;
+    color: white;
+  }
+  
+  /* title-image*/
+   .title-image{
+    width:56%;
+    position: absolute;
+    right: 15%;
+    /* clip-path: polygon(50% 0%, 69% 31%, 84% 58%, 78% 75%, 50% 100%, 22% 75%, 16% 58%, 31% 31%); */
+    border-radius: 50% / 25%;
+}
+  
+  /* feature-section */
+  #features{
+    padding: 9% 16%;
+    position: relative;
+    z-index: 3;
+  }
+  .feature-box{
+    text-align: center;
+    border-radius: 15px;
+    background-color: #fff;
+    
+    }
+    .feature-box:hover {
+      background-color: rgb(230, 230, 230);
+    }
+  .icon{
+    color: rgb(198, 48, 48);
+    margin-bottom: 2rem;
+  }
+  .ficon{
+    color: #000;
+    margin-left: 20px;
+  }
+  .Tech{
+    text-align: center;
+    padding-top: 80px;
+    font-style: normal;
+  }
+  
+  @media(max-width: 1028px){
+    #title{
+      text-align: center;
+    }
+    .title-image{
+      position: static;
+      transform: rotate(0);
+    }
+  }
+  
+  #footer{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #2a2929;
+    width: 100%;
+  }
+  .footer-icon{
+    margin: 20px 10px;
+    color: #fff;
+  }
+  .cta-button{
+    margin: 5% 2% 5% 0%;
+  }
+  .cta-heading{
+    font-family: Montserrat-bold;
+    line-height: 1.5;
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .head{
+    color: #000;
+  }
+  a:hover,
+a:active {
+  color: black;
+}
+a:hover {
+    text-decoration: underline #11999E;
+}
+.image-container{
+  background-color: #f3ede7; 
+}
+
+/* skill */
+.skills-section{
+width: 100%;
+height: auto;
+padding: 80px 13px;
+background-color: #f8f6f6;
+}
+.header{
+  width: 100%;
+  margin-bottom: 70px;
+  display: grid;
+  place-items: centre;
+  text-align: center;
+}
+.header h2 {
+  margin-bottom: -5px;
+}
+/* .header h2 span{ //for making skill word red
+  color: red;
+} */
+.skill-main{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 20px;
+}
+.skill-main .skill-bar .info{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.skill-bar .bar{
+  width: 100%;
+  height: 10px;
+  position: relative;
+  background-color: #c9c8c8;
+  border-radius: 25px;
+  margin-top: 5px;
+}
+.skill-bar .info .percent{
+  font-weight: bold;
+}
+.skill-bar .bar span{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: rgb(198, 48, 48);
+  border-radius: 25px;
+
+}
+.skill-bar .bar .html{
+  width: 85%;
+  animation: html 3s;
+}
+@keyframes html {
+  0%{
+    width: 0;
+  }100%{
+    width: 85%;
+  }
+}
+.skill-bar .bar .css{
+  width: 80%;
+  animation: css 3s;
+}
+@keyframes css {
+  0%{
+    width: 0;
+  }100%{
+    width: 80%;
+  }
+  
+}
+.skill-bar .bar .js{
+  width: 75%;
+  animation: js 3s;
+}
+@keyframes js {
+  0%{
+    width: 0;
+  }100%{
+    width: 75%;
+  }
+  
+}
+.skill-bar .bar .node{
+  width: 75%;
+  animation: node 3s;
+}
+@keyframes node {
+  0%{
+    width: 0;
+  }100%{
+    width: 75%;
+  }
+}
+.skill-bar .bar .java{
+  width: 80%;
+  animation: java 3s;
+}
+@keyframes java {
+  0%{
+    width: 0;
+  }100%{
+    width: 80%;
+  }
+  
+}
+.skill-bar .bar .c{
+  width: 75%;
+  animation: c 3s;
+}
+@keyframes c {
+  0%{
+    width: 0;
+  }100%{
+    width: 75%;
+  }
+  
+}
+.skill-bar .bar .python{
+  width: 70%;
+  animation: python 3s;
+}
+@keyframes python {
+  0%{
+    width: 0;
+  }100%{
+    width: 70%;
+  }
+  
+}
+/* about css */
+
+.title-image1{
+  width:22%;
+  border-radius: 50% / 25%;
+  margin-left: 8%;
+  margin-bottom: 6%;
+}
+.paradiv{
+  margin-left: 40%;
+  margin-top: -32%;
+
+}
+.para{
+  /* margin-right: 70px; */
+  color: #000;
+}
+#footer1{
+  margin-top: 15%;
+  padding: 4% 15%;
+  text-align: center;
+  background-color: #2a2929;
+  width: 100%;
+}
+.footer-icon{
+  margin: 20px 10px;
+  color: #fff;
+}
+
+
+/* project css */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.card {
+  width: calc(25% - 20px);
+  margin-bottom: 60px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 40px;
+  background-color: #eed9c2;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #000;
+}
+.c1{
+  width: 45%;
+  margin-top: 50px;
+  margin-left: 15px;
+}
+.c2{
+  margin-top: 50px;
+  width: 45%;
+  margin-right: 20px;
+}
+.c3{
+  width: 45%;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.c4{
+  margin-top: 50px;
+  width: 45%;
+  margin-right: 20px;
+}
+.projtitle{
+  margin-top:6% ;
+  padding-left: 42%;
+}
